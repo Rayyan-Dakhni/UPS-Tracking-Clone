@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracking | UPS - United States</title>
+
+    <link rel="stylesheet" href="/dist/styles.css" />
+  </head>
+  <body class="bg-white w-screen">
+    <header class="bg-stone-200 px-5 sm:px-10 p-2 w-full flex justify-between">
+      <a href="#" class="text-sm font-medium text-stone-800 underline">
+        UPS Location Near 83462: 615 Gunfighter Avenue
+      </a>
+
+      <div class="flex space-x-7 text-sm font-medium text-stone-800">
+        <a href="#" class="underline">Service Alerts (1)</a>
+
+        <a href="#" class="underline hidden sm:block"
+          >United States - English</a
+        >
+
+        <a href="#" class="underline hidden sm:block">About UPS</a>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="w-full sticky top-0 bg-white flex justify-between p-3 sm:p-5 px-3 sm:px-16"
+    >
+      <div class="flex space-x-10 items-center font-medium">
+        <!-- Logo -->
+        <img
+          src="https://www.ups.com/assets/resources/images/UPS_logo.svg"
+          alt="UPS Logo"
+          class="px-2 w-14 sm:w-auto"
+        />
+
+        <!-- Nav Links -->
+        <a href="#" class="hidden sm:block">Shipping</a>
+
+        <a href="#" class="hidden sm:block">Tracking</a>
+
+        <a href="#" class="hidden sm:block">Products & Services</a>
+      </div>
+
+      <div class="flex space-x-3 items-center">
+        <button class="text-xl p-2 rounded-full hover:bg-gray-200">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button class="text-xl p-3 rounded-full bg-yellow-400">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="relative">
+          <!-- Hamburger Menu -->
+          <button
+            id="menu-hamburger"
+            class="text-xl p-2 rounded-full hover:bg-gray-200 sm:hidden"
+            onclick="ToggleMobileNavigation()"
+          >
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+
+          <button
+            id="menu-close"
+            class="text-xl p-2 rounded-full hover:bg-gray-200 hidden sm:hidden"
+            onclick="ToggleMobileNavigation()"
+          >
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Mobile Nav Menu -->
+          <aside
+            id="mobile-nav"
+            class="absolute w-60 top-[150%] right-0 h-auto bg-white p-5 border shadow-md hidden"
+          >
+            <ul class="">
+              <li class="p-3">
+                <a href="#" class="hover:underline">Shipping</a>
+              </li>
+
+              <li class="p-3">
+                <a href="#" class="hover:underline">Tracking</a>
+              </li>
+
+              <li class="p-3">
+                <a href="#" class="hover:underline">Products and Services</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Avoid Fraud Section -->
+    <section class="w-full py-8 bg-[#B2D7D4]">
+      <div
+        class="w-full px-5 sm:px-0 sm:w-2/3 lg:w-1/2 mx-auto block sm:flex items-center sm:space-x-2"
+      >
+        <div class="w-full text-center sm:text-left">
+          <h3 class="font-medium tracking-normal text-xl">
+            Stay Safe - Avoid Fraud and Scams
+          </h3>
+
+          <p class="text-gray-800 text-sm mt-1">
+            Received a text, call or email that seems suspicious? Don't respond
+            to it.
+          </p>
+        </div>
+
+        <br class="sm:hidden" />
+
+        <button
+          class="p-2 px-10 mx-auto sm:mx-0 flex-none rounded-full flex items-center bg-yellow-400 transition-all hover:shadow-lg hover:text-blue-900"
+        >
+          Tips to Avoid Fraud
+          <span class="font-medium text-xl ml-2">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z"
+              ></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <br />
+    <br />
+
+    <!-- Tracking -->
+    <section id="tracking-form" class="bg-stone-200 p-5 sm:p-10 w-full">
+      <div class="w-full sm:w-5/6 mx-auto sm:grid sm:grid-cols-3 sm:gap-10">
+        <div class="sm:col-span-2 w-full bg-white border shadow-md p-5">
+          <div class="flex items-end">
+            <span class="text-2xl mb-1 mr-2">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"
+                ></path>
+                <path d="M16.5 9.4 7.55 4.24"></path>
+                <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                <line x1="12" x2="12" y1="22" y2="12"></line>
+                <circle cx="18.5" cy="15.5" r="2.5"></circle>
+                <path d="M20.27 17.27 22 19"></path>
+              </svg>
+            </span>
+
+            <h3 class="text-xl font-light">Track</h3>
+          </div>
+
+          <div class="flex justify-between">
+            <p class="italic text-sm w-56 sm:w-auto">
+              Enter upto 25 tracking numbers, one per line
+            </p>
+
+            <a href="#" class="text-sm text-blue-800 flex-none">
+              Help
+              <span class="float-right text-base mt-px ml-1">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <form action="#" novalidate class="w-full">
+            <div class="w-full group">
+              <textarea
+                name="tracking-ids"
+                id="tracking-ids"
+                rows="2"
+                class="w-full border border-black mt-1 p-3 text-sm peer invalid:required:border-red-600"
+                onblur="AddValidation()"
+              ></textarea>
+
+              <p class="text-red-600 text-sm hidden peer-invalid:block">
+                Please provide a tracking number
+              </p>
+            </div>
+
+            <br />
+
+            <button
+              type="button"
+              class="p-2 px-10 flex-none rounded-full flex items-center bg-yellow-400 transition-all hover:shadow-lg hover:text-blue-900"
+              onclick="TrackShipment()"
+            >
+              Track
+              <span class="font-medium text-xl ml-2">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z"
+                  ></path>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+
+        <br class="sm:hidden" />
+
+        <div class="w-full h-40 bg-white border shadow-md p-5">
+          <button class="w-full text-left text-blue-700 underline text-sm mb-2">
+            Track by Reference Number
+          </button>
+
+          <a href="#" class="text-blue-700 underline text-sm w-full"
+            >Import Tracking Numbers
+          </a>
+
+          <button class="w-full text-left text-blue-700 underline text-sm mt-3">
+            Other Tracking Services
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="tracking-loader"
+      class="bg-stone-200 p-5 sm:p-10 w-full hidden"
+    >
+      <div
+        class="w-full sm:w-5/6 h-80 mx-auto flex items-center justify-center"
+      >
+        <span class="animate-spin text-6xl">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 22c5.421 0 10-4.579 10-10h-2c0 4.337-3.663 8-8 8s-8-3.663-8-8c0-4.336 3.663-8 8-8V2C6.579 2 2 6.58 2 12c0 5.421 4.579 10 10 10z"
+            ></path>
+          </svg>
+        </span>
+      </div>
+    </section>
+
+    <!-- Shipment Information -->
+    <section
+      id="tracking-information"
+      class="bg-stone-200 p-5 sm:p-10 w-full sm:max-h-96 hidden"
+    >
+      <div class="w-full mx-auto sm:grid sm:grid-cols-3 sm:gap-10 z-10">
+        <div class="col-span-2 w-full bg-white border shadow-md p-5 z-10">
+          <h5 class="text-sm">Your Shipment</h5>
+          <h5 class="font-semibold text-sm">1ZW501226812026501</h5>
+
+          <br />
+
+          <p class="text-sm">
+            <span
+              class="float-left p-1 rounded-full bg-teal-500 text-white text-[0.6rem] mr-1 mt-px"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 0 0-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
+                ></path>
+              </svg>
+            </span>
+            Delivered On
+          </p>
+          <h3 class="font-bold text-teal-600 text-lg">
+            Wednesday, July 19 at 7:13 P.M.
+          </h3>
+
+          <br />
+          <hr />
+          <br />
+
+          <div
+            class="w-4/5 border-2 border-gray-300 p-5 flex space-x-3 items-start rounded-md"
+          >
+            <div class="text-3xl">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="text-sm font-medium">
+              <p>Pickup Details</p>
+              <p class="underline">
+                MONAMI INFORMATIQUE , 64 JONQUIERE RUE DE LA , PARIS , 75017 ,
+                FR
+              </p>
+            </div>
+          </div>
+
+          <br />
+          <br />
+
+          <p class="font-light text-sm">
+            <span class="font-medium text-sm">Received By:</span>
+
+            <br />
+            SEHAM AL SEEB
+            <br />
+            <a href="#" class="text-blue-700 font-normal underline"
+              >Proof of Delivery</a
+            >
+          </p>
+
+          <br />
+          <br />
+
+          <div class="flex items-center space-x-5">
+            <button
+              class="p-2 px-7 flex-none rounded-full flex items-center bg-yellow-400 transition-all hover:shadow-lg hover:text-blue-900"
+            >
+              Get Updates
+              <span class="font-medium text-xl ml-2">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z"
+                  ></path>
+                </svg>
+              </span>
+            </button>
+
+            <a
+              href="#"
+              onclick="ToggleModal('shipment-info-modal')"
+              class="text-blue-700 underline"
+              >View Details</a
+            >
+          </div>
+        </div>
+
+        <br class="sm:hidden" />
+
+        <div class="w-full h-40 bg-white border shadow-md p-5">
+          <button class="w-full text-left text-blue-700 underline text-sm mb-2">
+            Track by Reference Number
+          </button>
+
+          <a href="#" class="text-blue-700 underline text-sm w-full"
+            >Import Tracking Numbers
+          </a>
+
+          <button class="w-full text-left text-blue-700 underline text-sm mt-3">
+            Other Tracking Services
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- View Shipment Information Modal -->
+    <section
+      id="shipment-info-modal"
+      class="w-screen h-screen fixed top-0 left-0 bg-gray-900 bg-opacity-25 z-20 justify-center items-center hidden"
+    >
+      <div
+        class="w-full h-full sm:w-2/3 sm:h-auto bg-white shadow border rounded p-10 overflow-auto"
+      >
+        <hr class="w-40 border-2 border-yellow-400 rounded-full" />
+        <br />
+
+        <h5>
+          <b>Last Updated:</b> <br class="sm:hidden" />
+          07/30/2023 5:38 A.M. EST
+        </h5>
+
+        <br />
+
+        <div
+          class="w-full border-b-4 border-teal-600 pb-2 sm:p-4 sm:px-10 text-sm sm:text-base font-medium"
+        >
+          <a href="#" class="p-3 sm:p-5 bg-teal-600 text-white rounded-t-md"
+            >Shipment Details</a
+          >
+          <a href="#" class="p-3 sm:p-5 bg-transparent text-black rounded-t-md"
+            >Shipment Progress</a
+          >
+        </div>
+
+        <br />
+
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="w-full">
+            <h4 class="text-lg font-semibold">Tracking Number</h4>
+            <p>1ZW501226812026501</p>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-lg font-semibold">Shipped / Billed On</h4>
+            <p>07/12/2023</p>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-lg font-semibold">Service</h4>
+            <p>UPS Standard®</p>
+          </div>
+
+          <div class="w-full row-span-2">
+            <h4 class="text-lg font-semibold">Other requested services</h4>
+            <ul class="list-disc ml-10">
+              <li>Hold at UPS Access Point™</li>
+            </ul>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-lg font-semibold">Weight</h4>
+            <p>0.95 KGS</p>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-lg font-semibold">Shipment Category</h4>
+            <p>Package</p>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="text-center">
+          <button
+            onclick="ToggleModal('shipment-info-modal')"
+            class="w-auto p-3 px-6 border border-teal-600 rounded-full hover:bg-teal-600 hover:text-white"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recently Tracked -->
+    <section class="w-full p-5 sm:p-10">
+      <div class="w-full sm:w-5/6 mx-auto">
+        <h3 class="font-medium text-xl">Recently Tracked</h3>
+
+        <p class="text-sm mt-2">
+          <span class="text-blue-700 underline">Log In</span> or
+          <span class="text-blue-700 underline">Sign Up</span> to view your
+          recently tracked shipments.
+        </p>
+      </div>
+    </section>
+
+    <br />
+
+    <section class="w-full p-5 sm:p-10 sm:px-20">
+      <p class="text-sm">
+        UPS Freight Less-than-Truckload (“LTL”) transportation services are
+        offered by TFI International Inc., its affiliates or divisions
+        (including without limitation TForce Freight), which are not affiliated
+        with United Parcel Service, Inc. or any of its affiliates, subsidiaries
+        or related entities (“UPS”). UPS assumes no liability in connection with
+        UPS Freight LTL transportation services or any other services offered or
+        provided by TFI International Inc. or its affiliates, divisions,
+        subsidiaries or related entities.
+      </p>
+    </section>
+
+    <footer class="w-full sm:p-10 sm:px-20 bg-[#351c15] text-white">
+      <div class="w-full grid grid-cols-1 sm:grid-cols-4 sm:gap-10">
+        <!-- This Site -->
+        <div class="w-full">
+          <h3
+            onclick="ToggleFooterMenus('this-site-menu')"
+            class="font-bold text-lg p-5 border-b sm:border-b-0 sm:p-0"
+          >
+            This Site
+
+            <!-- Plus Icon -->
+            <span class="float-right plus-icon mt-1 sm:hidden">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                t="1551322312294"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <path
+                  d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                ></path>
+                <path
+                  d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                ></path>
+              </svg>
+            </span>
+
+            <!-- Minus Icon -->
+            <span class="float-right minus-icon hidden mt-1 sm:hidden">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                ></path>
+              </svg>
+            </span>
+          </h3>
+
+          <ul
+            id="this-site-menu"
+            class="list-none text-sm mt-7 px-10 sm:px-0 hidden sm:block"
+          >
+            <li class="text-stone-300 mt-5">Tracking</li>
+
+            <li class="text-stone-300 mt-5">Shipping</li>
+
+            <li class="text-stone-300 mt-5">Contact Us</li>
+
+            <li class="text-stone-300 mt-5">Communication Preferences</li>
+          </ul>
+        </div>
+
+        <!-- Other UPS Sites -->
+        <div class="w-full">
+          <h3
+            onclick="ToggleFooterMenus('other-ups-sites-menu')"
+            class="font-bold text-lg p-5 border-b sm:border-b-0 sm:p-0"
+          >
+            Other UPS Sites
+
+            <!-- Plus Icon -->
+            <span class="float-right plus-icon mt-1 sm:hidden">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                t="1551322312294"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <path
+                  d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                ></path>
+                <path
+                  d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                ></path>
+              </svg>
+            </span>
+
+            <!-- Minus Icon -->
+            <span class="float-right minus-icon hidden mt-1 sm:hidden">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                ></path>
+              </svg>
+            </span>
+          </h3>
+
+          <ul
+            id="other-ups-sites-menu"
+            class="list-none text-sm mt-7 px-10 sm:px-0 hidden sm:block"
+          >
+            <li class="text-stone-300 mt-5 flex">
+              About UPS
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+
+            <li class="text-stone-300 mt-5 flex">
+              Recognize a UPS Employee
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+
+            <li class="text-stone-300 mt-5 flex">
+              Supply Chain Solutions
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+
+            <li class="text-stone-300 mt-5 flex">
+              The UPS Store
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+
+            <li class="text-stone-300 mt-5 flex">
+              UPS Jobs
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+
+            <li class="text-stone-300 mt-5 flex">
+              UPS Developer Portal
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Connect With Us -->
+        <div class="w-full">
+          <h3
+            onclick="ToggleFooterMenus('connect-with-us-menu')"
+            class="font-bold text-lg p-5 border-b sm:border-b-0 sm:p-0"
+          >
+            Connect With Us
+
+            <!-- Plus Icon -->
+            <span class="float-right plus-icon mt-1 sm:hidden">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                t="1551322312294"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <path
+                  d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                ></path>
+                <path
+                  d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                ></path>
+              </svg>
+            </span>
+
+            <!-- Minus Icon -->
+            <span class="float-right minus-icon hidden mt-1 sm:hidden">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                ></path>
+              </svg>
+            </span>
+          </h3>
+
+          <ul
+            id="connect-with-us-menu"
+            class="list-none text-sm mt-7 px-10 sm:px-0 hidden sm:block"
+          >
+            <li class="text-stone-300 mt-5 flex">
+              Facebook
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+
+            <li class="text-stone-300 mt-5 flex">
+              Twitter
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+
+            <li class="text-stone-300 mt-5 flex">
+              Instagram
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+
+            <li class="text-stone-300 mt-5 flex">
+              Linkedin
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+
+            <li class="text-stone-300 mt-5 flex">
+              Youtube
+              <span class="ml-1 mt-px">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                  ></path>
+                  <path
+                    d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                  ></path>
+                </svg>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="w-full sm:hidden">
+          <h3
+            onclick="ToggleFooterMenus('legal-menu')"
+            class="font-bold text-lg p-5 border-b sm:border-b-0 sm:p-0"
+          >
+            Legal
+
+            <!-- Plus Icon -->
+            <span class="float-right plus-icon mt-1 sm:hidden">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                t="1551322312294"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <path
+                  d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                ></path>
+                <path
+                  d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                ></path>
+              </svg>
+            </span>
+
+            <!-- Minus Icon -->
+            <span class="float-right minus-icon hidden mt-1 sm:hidden">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                ></path>
+              </svg>
+            </span>
+          </h3>
+
+          <ul
+            id="legal-menu"
+            class="list-none text-sm mt-7 px-10 sm:px-0 hidden sm:block"
+          >
+            <li class="text-stone-300 mt-5">
+              <a href="#" class="hover:underline cursor-pointer">
+                Global Home
+              </a>
+            </li>
+
+            <li class="text-stone-300 mt-5">
+              <a href="#" class="hover:underline cursor-pointer">
+                Protect Against Fraud
+              </a>
+            </li>
+
+            <li class="text-stone-300 mt-5">
+              <a href="#" class="hover:underline cursor-pointer">
+                Terms and Conditions
+              </a>
+            </li>
+
+            <li class="text-stone-300 mt-5">
+              <a href="#" class="hover:underline cursor-pointer">
+                Website Terms of Use
+              </a>
+            </li>
+
+            <li class="text-stone-300 mt-5">
+              <a href="#" class="hover:underline cursor-pointer">
+                Your California Privacy Rights
+              </a>
+            </li>
+
+            <li class="text-stone-300 mt-5">
+              <a href="#" class="hover:underline cursor-pointer">
+                Privacy Notice
+              </a>
+            </li>
+
+            <li class="text-stone-300 mt-5">
+              <a href="#" class="hover:underline cursor-pointer">
+                Cookie Settings
+              </a>
+            </li>
+
+            <li class="text-stone-300 mt-5">
+              <a href="#" class="hover:underline cursor-pointer">
+                Do Not Sell or Share My Personal Information
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hidden sm:block"></div>
+      </div>
+
+      <br />
+      <br />
+
+      <hr class="border-stone-500 h-px hidden sm:block" />
+
+      <div class="w-full text-[0.81rem] mt-2 hidden sm:block">
+        <a
+          href="#"
+          class="text-stone-300 border-r border-stone-600 pr-3 hover:underline"
+        >
+          Global Home
+        </a>
+
+        <a
+          href="#"
+          class="text-stone-300 border-r border-stone-600 px-3 hover:underline"
+        >
+          Protect Against Fraud
+        </a>
+
+        <a
+          href="#"
+          class="text-stone-300 border-r border-stone-600 px-3 hover:underline"
+        >
+          Terms and Conditions
+        </a>
+
+        <a
+          href="#"
+          class="text-stone-300 border-r border-stone-600 px-3 hover:underline"
+        >
+          Website Terms of Use
+        </a>
+
+        <a
+          href="#"
+          class="text-stone-300 border-r border-stone-600 px-3 hover:underline"
+        >
+          Your California Privacy Rights
+        </a>
+
+        <a
+          href="#"
+          class="text-stone-300 border-r border-stone-600 px-3 hover:underline"
+        >
+          Privacy Notice
+        </a>
+
+        <a
+          href="#"
+          class="text-stone-300 border-r border-stone-600 px-3 hover:underline"
+        >
+          Cookie Settings
+        </a>
+
+        <a href="#" class="text-stone-300 px-3 hover:underline">
+          Do Not Sell or Share My Personal Information
+        </a>
+      </div>
+
+      <br class="hidden sm:block" />
+
+      <p class="text-xs text-stone-300 px-5 sm:px-0">
+        Copyright ©1994- 2023 United Parcel Service of America, Inc. All rights
+        reserved.
+      </p>
+
+      <br />
+      <br />
+    </footer>
+
+    <script>
+      function AddValidation(e) {
+        document.querySelector("#tracking-ids").required = true;
+      }
+
+      function ToggleFooterMenus(id) {
+        const menu = document.getElementById(id);
+
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+
+          menu.parentElement
+            .querySelector(".minus-icon")
+            .classList.remove("hidden");
+          menu.parentElement
+            .querySelector(".plus-icon")
+            .classList.add("hidden");
+        } else {
+          menu.classList.add("hidden");
+
+          menu.parentElement
+            .querySelector(".minus-icon")
+            .classList.add("hidden");
+          menu.parentElement
+            .querySelector(".plus-icon")
+            .classList.remove("hidden");
+        }
+      }
+
+      function ToggleMobileNavigation() {
+        const mobileNav = document.getElementById("mobile-nav");
+
+        if (mobileNav.classList.contains("hidden")) {
+          mobileNav.classList.remove("hidden");
+
+          document.querySelector("#menu-hamburger").classList.add("hidden");
+          document.querySelector("#menu-close").classList.remove("hidden");
+        } else {
+          mobileNav.classList.add("hidden");
+
+          document.querySelector("#menu-hamburger").classList.remove("hidden");
+          document.querySelector("#menu-close").classList.add("hidden");
+        }
+      }
+
+      function ToggleModal(id) {
+        const modal = document.getElementById(id);
+
+        if (modal.classList.contains("hidden")) {
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+        } else {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+        }
+      }
+
+      function TrackShipment() {
+        document.querySelector("#tracking-form").classList.add("hidden");
+
+        document.querySelector("#tracking-loader").classList.remove("hidden");
+
+        setTimeout(() => {
+          document
+            .querySelector("#tracking-information")
+            .classList.remove("hidden");
+          document.querySelector("#tracking-loader").classList.add("hidden");
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
